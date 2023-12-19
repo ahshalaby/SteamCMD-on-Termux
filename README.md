@@ -16,7 +16,7 @@ rm install_in_clean_termux.sh
 Go to Step 2 in the previous section.
 
 ### With proot-distro and a Debian installation:
-1Start termux and run this code:
+Start termux and run this code:
 ```
 apt update && apt upgrade -y
 wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/install_ready.sh
