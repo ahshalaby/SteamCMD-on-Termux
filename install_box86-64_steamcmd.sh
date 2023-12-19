@@ -35,7 +35,7 @@ curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.g
 
 echo '#!/bin/bash
 
-box86 /root/Steam/steamcmd.sh' >> steamcmd
+box86 /root/Steam/steamcmd.sh +force_install_dir /sdcard/Steam' >> steamcmd
 mv steamcmd /bin
 chmod +x /bin/steamcmd
 
