@@ -1,8 +1,7 @@
 #!/bin/bash
 
-echo -e "This script will install box86, box64, SteamCMD and their dependencies."
-read -n 1 -s -r -p "Press any key to continue."
-echo -e
+echo -e "\033[0;32mStarting installation..."
+echo -e "\033[0;37m"
 
 echo -e "\033[0;32mInstalling box86 dependencies..."
 echo -e "\033[0;37m"
