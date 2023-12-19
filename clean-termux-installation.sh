@@ -4,7 +4,6 @@ termux-setup-storage
 echo -e "This script will install proot-distro, install Debian on it and then run the script that will install box86-64 and SteamCMD."
 read -n 1 -s -r -p "Press any key to continue."
 echo -e
-apt update && apt upgrade -y
 
 echo -e "Installing proot-distro..."
 apt install proot-distro -y
