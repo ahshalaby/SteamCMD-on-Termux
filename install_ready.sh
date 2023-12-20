@@ -19,15 +19,14 @@ chmod +x steamcmd
 mv steamcmd /data/data/com.termux/files/usr/bin
 
 echo -e "\nDownloading SteamCMD options scripts...\n"
-
 mkdir option_scripts && cd option_scripts
 wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steam_installdir.sh && chmod +x steam_installdir.sh
 wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steam_login.sh && chmod +x steam_login.sh
 wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steam_platform.sh && chmod +x steam_platform.sh
-wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steamcmd-options.sh && chmod +x steamcmd-options.sh
+wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steamcmd-options && chmod +x steamcmd-options
+mv steam-options /data/data/com.termux/files/usr/bin
 cd
 
-echo 'alias steamcmd-options="./option_scripts/steamcmd-options.sh"' >> .bashrc
 echo 'echo -e "\n\nStart SteamCMD:  \033[0;32msteamcmd\033[0;37m\n"' >> .bashrc
 echo 'echo -e "SteamCMD Option Menu:  \033[0;32msteamcmd-options\033[0;37m\n"' >> .bashrc
 
@@ -35,3 +34,4 @@ echo -e "\nInstallation completed.\nNow you can start SteamCMD either by typing 
 echo -e "NOTE: SteamCMD was configured to install to the Steam folder in the internal storage (will appear with first launch)."
 read -n 1 -s -r -p "Press any key to continue."
 echo -e "\n"
+
