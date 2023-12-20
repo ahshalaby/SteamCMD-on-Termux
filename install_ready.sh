@@ -18,7 +18,7 @@ proot-distro login debian --user root --shared-tmp -- bash -c steamcmd' >> steam
 chmod +x steamcmd
 mv steamcmd /data/data/com.termux/files/usr/bin
 
-exho -e "\nDownloading SteamCMD options scripts...\n"
+echo -e "\nDownloading SteamCMD options scripts...\n"
 mkdir option_scripts && cd option_scripts
 wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steam_installdir.sh && chmod +x steam_installdir.sh
 wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steam_login.sh && chmod +x steam_login.sh
