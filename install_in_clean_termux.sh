@@ -12,7 +12,8 @@ echo -e "\nInstalling Debian...\n"
 proot-distro install debian
 
 echo -e "\nDownloading and starting the install script...\n"
-wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/install_box86-64_steamcmd.sh
+wget https://raw.githubusercontent.com/ahshalaby/SteamCMD-on-Termux/main/install_box86-64_steamcmd.sh
+
 mv install_box86-64_steamcmd.sh $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root
 proot-distro login debian --user root --shared-tmp -- bash -c ./install_box86-64_steamcmd.sh
 
@@ -26,10 +27,10 @@ mv steamcmd /data/data/com.termux/files/usr/bin
 
 echo -e "\nDownloading SteamCMD options scripts...\n"
 mkdir option_scripts && cd option_scripts
-wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steam_installdir.sh && chmod +x steam_installdir.sh
-wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steam_login.sh && chmod +x steam_login.sh
-wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steam_platform.sh && chmod +x steam_platform.sh
-wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steamcmd-options && chmod +x steamcmd-options
+wget https://raw.githubusercontent.com/ahshalaby/SteamCMD-on-Termux/main/option_scripts/steam_installdir.sh && chmod +x steam_installdir.sh
+wget https://raw.githubusercontent.com/ahshalaby/SteamCMD-on-Termux/main/option_scripts/steam_login.sh && chmod +x steam_login.sh
+wget https://raw.githubusercontent.com/ahshalaby/SteamCMD-on-Termux/main/option_scripts/steam_platform.sh && chmod +x steam_platform.sh
+wget https://raw.githubusercontent.com/ahshalaby/SteamCMD-on-Termux/main/option_scripts/steamcmd-options && chmod +x steamcmd-options
 mv steam-options /data/data/com.termux/files/usr/bin
 cd
 
