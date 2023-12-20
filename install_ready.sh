@@ -9,7 +9,8 @@ echo -e "\nDownloading and starting the install script...\n"
 wget https://raw.githubusercontent.com/ahshalaby/SteamCMD-on-Termux/main/install_box86-64_steamcmd.sh
 
 mv install_box86-64_steamcmd.sh $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root
-proot-distro login debian --user root --shared-tmp -- bash -c chmod +x install_box86-64_steamcmd.sh && ./install_box86-64_steamcmd.sh
+proot-distro login debian --user root --shared-tmp -- bash -c chmod +x install_box86-64_steamcmd.sh 
+proot-distro login debian --user root --shared-tmp -- bash -c ./install_box86-64_steamcmd.sh
 
 rm $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/install_box86-64_steamcmd.sh
 
