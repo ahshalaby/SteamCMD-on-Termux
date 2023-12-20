@@ -37,7 +37,7 @@ esac
 
 done
 
-if [[ -z "$pw" ]]; then cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/.steamcmd && rm usrdata 2> /dev/null && echo "$un" >> usrdata && cd
+if [[ -z "$pw" ]]; then cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/.steamcmd_config && rm usrdata 2> /dev/null && echo "$un" >> usrdata && cd
 exit
 fi
 
@@ -49,7 +49,7 @@ read -n 1 -s -r -p "Press any key to retry."
 echo -e "\n"
 done
 
-cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/.steamcmd
+cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/.steamcmd_config
 rm usrdata 2> /dev/null
 echo "$un $pw" >> usrdata
 cd
