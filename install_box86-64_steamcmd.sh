@@ -31,10 +31,9 @@ rm Addons_Proot_Box86_64_Bash.sh
 echo -e "\n\033[0;32mInstalling SteamCMD...\n"
 echo -e "\033[0;37m"
 adduser --disabled-password --gecos "" steam
-su - steam
-mkdir Steam && cd Steam
+mkdir /home/steam/Steam && cd /home/steam/Steam
 curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -
-exit
+cd
 
 mkdir /root/.steamcmd_config
 cd .steamcmd_config
