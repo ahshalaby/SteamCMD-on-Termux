@@ -39,7 +39,7 @@ echo '#!/bin/bash
 pltfrm=$(< /root/.steamcmd_config/pltfrm)
 usrdata=$(< /root/.steamcmd_config/usrdata)
 installdir=$(< /root/.steamcmd_config/installdir)
-/root/Steam/steamcmd.sh +@sSteamCmdForcePlatformType $pltfrm +login $usrdata +force_install_dir $installdir' >> steamcmd
+/root/Steam/steamcmd.sh $pltfrm $usrdata $installdir' >> steamcmd
 mv steamcmd /bin
 chmod +x /bin/steamcmd
 
