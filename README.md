@@ -6,7 +6,7 @@
 ```
 apt update && apt upgrade -y
 apt install wget -y
-wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/install_in_clean_termux.sh
+wget https://raw.githubusercontent.com/ahshalaby/SteamCMD-on-Termux/main/install_in_clean_termux.sh
 chmod +x install_in_clean_termux.sh
 ./install_in_clean_termux.sh
 rm install_in_clean_termux.sh
@@ -21,7 +21,7 @@ Start termux and run this code:
 ```
 apt update && apt upgrade -y
 apt install wget -y
-wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/install_ready.sh
+wget https://raw.githubusercontent.com/ahshalaby/SteamCMD-on-Termux/main/install_ready.sh
 chmod +x install_ready.sh
 ./install_ready.sh
 rm install_ready.sh
