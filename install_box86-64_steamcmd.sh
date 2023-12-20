@@ -23,7 +23,7 @@ sudo apt update && sudo apt install box64-arm64 -y
 
 echo -e "\n\033[0;32mRunning cheadrian's script to setup bash Box environment...\n"
 echo -e "\033[0;37m"
-wget https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/blob/main/Scripts/Addons_Proot_Box86_64_Bash.sh
+wget https://raw.githubusercontent.com/cheadrian/termux-chroot-proot-wine-box86_64/main/Scripts/Addons_Proot_Box86_64_Bash.sh
 chmod +x Addons_Proot_Box86_64_Bash.sh
 ./Addons_Proot_Box86_64_Bash.sh
 rm Addons_Proot_Box86_64_Bash.sh
