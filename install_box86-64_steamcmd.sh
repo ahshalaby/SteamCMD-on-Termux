@@ -5,7 +5,7 @@ echo -e "\033[0;37m"
 
 echo -e "\n\033[0;32mInstalling box86 dependencies...\n"
 echo -e "\033[0;37m"
-apt-get install sudo curl wget -y
+apt-get update && apt-get upgrade && apt-get install sudo curl wget -y
 sudo dpkg --add-architecture armhf
 apt-get update && sudo apt-get install libc6:armhf libtinfo6:armhf -y
 
