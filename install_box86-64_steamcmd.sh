@@ -33,11 +33,16 @@ echo -e "\033[0;37m"
 mkdir Steam && cd Steam
 curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -
 
-echo '#!/bin/bash
+mkdir /root/.steamcmd_config
 
-box86 /root/Steam/steamcmd.sh +force_install_dir /sdcard/Steam' >> steamcmd
+echo '#!/bin/bash
+pltfrm=$(< /root/.steamcmd_config/pltfrm)
+usrdata=$(< /root/.steamcmd_config/usrdata)
+installdir=$(< /root/.steamcmd_config/installdir)
+/root/Steam/steamcmd.sh +@sSteamCmdForcePlatformType $pltfrm +login $usrdata +force_install_dir $installdir' >> steamcmd
 mv steamcmd /bin
 chmod +x /bin/steamcmd
+
 
 
 echo -e "Installation finished. Now you can start SteamCMD by typing \033[0;32msteamcmd \033[0;37min the console."
