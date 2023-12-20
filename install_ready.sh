@@ -24,7 +24,7 @@ wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/st
 wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steam_login.sh && chmod +x steam_login.sh
 wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steam_platform.sh && chmod +x steam_platform.sh
 wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/steamcmd-options && chmod +x steamcmd-options
-mv steam-options /data/data/com.termux/files/usr/bin
+mv steamcmd-options /data/data/com.termux/files/usr/bin
 cd
 
 echo 'echo -e "\n\nStart SteamCMD:  \033[0;32msteamcmd\033[0;37m\n"' >> .bashrc
