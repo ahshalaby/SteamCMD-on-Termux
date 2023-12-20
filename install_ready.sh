@@ -27,13 +27,6 @@ wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/option_scripts/st
 mv steamcmd-options /data/data/com.termux/files/usr/bin
 cd
 
-wget https://github.com/ahshalaby/SteamCMD-on-Termux/blob/main/custom_bash.bashrc
-mv custom_bash.bashrc /data/data/com.termux/files/usr/etc/
-cd /data/data/com.termux/files/usr/etc/
-mv bash.bashrc bash.bashrc.old
-mv custom_bash.bashrc bash.bashrc
-cd
-
 echo -e "\nInstallation completed.\nNow you can start SteamCMD either by typing \033[0;32msteamcmd \033[0;37min the Termux or Debian console.\nYou can tweak SteamCMD's launch options by typing \033[0;32msteamcmd-options \033[0;37min Termux.\n"
 echo -e "NOTE: SteamCMD was configured to install to the Steam folder in the internal storage (will appear with first launch)."
 read -n 1 -s -r -p "Press any key to continue."
