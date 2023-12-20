@@ -30,6 +30,7 @@ wget https://raw.githubusercontent.com/ahshalaby/SteamCMD-on-Termux/main/option_
 mv steamcmd-options /data/data/com.termux/files/usr/bin
 cd
 
+rm .bashrc 2> /dev/null
 echo 'echo -e "\n\nStart SteamCMD:  \033[0;32msteamcmd\033[0;37m\n"' >> .bashrc
 echo 'echo -e "SteamCMD Option Menu:  \033[0;32msteamcmd-options\033[0;37m\n"' >> .bashrc
 
