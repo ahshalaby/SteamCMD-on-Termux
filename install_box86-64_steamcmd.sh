@@ -30,8 +30,11 @@ rm Addons_Proot_Box86_64_Bash.sh
 
 echo -e "\n\033[0;32mInstalling SteamCMD...\n"
 echo -e "\033[0;37m"
+adduser --disabled-password --gecos "" steam
+su - steam
 mkdir Steam && cd Steam
 curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -
+exit
 
 mkdir /root/.steamcmd_config
 cd .steamcmd_config
@@ -42,7 +45,7 @@ echo '#!/bin/bash
 pltfrm=$(< /root/.steamcmd_config/pltfrm)
 usrdata=$(< /root/.steamcmd_config/usrdata)
 installdir=$(< /root/.steamcmd_config/installdir)
-box86 /root/Steam/steamcmd.sh $pltfrm $usrdata $installdir' >> steamcmd
+box86 /home/steam/Steam/steamcmd.sh $pltfrm $usrdata $installdir' >> steamcmd
 mv steamcmd /bin
 chmod +x /bin/steamcmd
 
