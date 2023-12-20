@@ -13,7 +13,7 @@ echo -e "\n\033[0;32mInstalling box86...\n"
 echo -e "\033[0;37m"
 sudo wget https://itai-nelken.github.io/weekly-box86-debs/debian/box86.list -O /etc/apt/sources.list.d/box86.list
 wget -qO- https://itai-nelken.github.io/weekly-box86-debs/debian/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/box86-debs-archive-keyring.gpg
-sudo apt install box86:armhf -y
+sudo apt update && sudo apt install box86 -y
 
 echo -e "\n\033[0;32mInstalling box64...\n"
 echo -e "\033[0;37m"
