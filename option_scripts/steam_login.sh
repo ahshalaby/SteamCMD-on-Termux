@@ -37,7 +37,7 @@ esac
 
 done
 
-if [[ -z "$pw" ]]; then cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/.steamcmd && rm usrdata && echo "$un" >> usrdata && cd
+if [[ -z "$pw" ]]; then cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/.steamcmd && rm usrdata 2> /dev/null && echo "$un" >> usrdata && cd
 exit
 fi
 
@@ -50,6 +50,6 @@ echo -e "\n"
 done
 
 cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/.steamcmd
-rm usrdata
+rm usrdata 2> /dev/null
 echo "$un $pw" >> usrdata
 cd
