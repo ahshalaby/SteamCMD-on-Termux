@@ -1,5 +1,6 @@
 echo -e "\nPlease press Allow to grant Termux access to the internal storage.\n"
 termux-setup-storage
+apt install nano
 
 echo -e "\nThis script will install box86-64, SteamCMD and will create a shortcut to run SteamCMD directly from Termux.\n"
 read -n 1 -s -r -p "Press any key to continue."
