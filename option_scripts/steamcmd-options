@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-echo -e "\n\033[0;32mSteamCMD Options\n"
+echo -e "\n\033[0;32mSteamCMD Options \033[0;37m\n"
 echo -e "\n1- Full SteamCMD launch configuration."
 echo -e "2- Store Steam username (and password) for auto login."
 echo -e "3- Login anonymously to Steam."
