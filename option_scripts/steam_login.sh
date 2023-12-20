@@ -38,7 +38,7 @@ esac
 done
 
 if [[ -z "$pw" ]]; then 
-cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/.steamcmd_config
+cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/.steamcmd_config/
 rm usrdata 2> /dev/null
 echo "+login $un" >> usrdata
 cd
