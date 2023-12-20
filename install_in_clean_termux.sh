@@ -6,7 +6,7 @@ read -n 1 -s -r -p "Press any key to continue."
 echo -e "\n"
 
 echo -e "\nInstalling proot-distro...\n"
-apt install proot-distro -y
+apt install proot-distro nano -y
 
 echo -e "\nInstalling Debian...\n"
 proot-distro install debian
