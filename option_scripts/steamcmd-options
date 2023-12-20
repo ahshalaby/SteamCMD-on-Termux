@@ -36,11 +36,11 @@ exit;;
 echo -e
 exit;;
 
-6) echo -e "\nIf you are not familiar with vi, here are a couple of commands to get you going:\n"
-echo -e "Press \033[0;36mi \033[0;37mon the keyboard to enter \033[0;32mINPUT \033[0;37mmode (editing).\nPress \033[0;36mESC \033[0;37mon the termux keyboard to enter \033[0;32mCOMMAND \033[0;37mmode (to save, exit, etc.).\n\nIn \033[0;32mCOMMAND \033[0;37mmode:\nType \033[0;36m:wq \033[0;37mand press \033[0;36mEnter \033[0;37mto save and exit.\nType \033[0;36m:q \033[0;37mand press \033[0;36mEnter \033[0;37mto exit.\nType \033[0;36m:q! \033[0;37mand press \033[0;36mEnter \033[0;37mto force quit (without saving).\n"
+6) echo -e "\nIf you are not familiar with nano, here are a couple of commands to get you going:\n"
+echo -e "Press \033[0;36mCTRL+O \033[0;37m(CTRL is on the termux keyboard) and \033[0;36mEnter\033[0;37m to save.\nPress \033[0;36mCTRL+X \033[0;37mto exit.\n"
 read -n 1 -s -r -p "Press any key to continue."
 echo -e "\n\n"
-vi $PREFIX/var/lib/proot-distro/installed-rootfs/debian/bin/steamcmd
+nano $PREFIX/var/lib/proot-distro/installed-rootfs/debian/bin/steamcmd
 exit;;
 
 7) echo -e "Exiting..\n"
