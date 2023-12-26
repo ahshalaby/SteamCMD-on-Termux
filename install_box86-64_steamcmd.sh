@@ -44,7 +44,7 @@ echo '#!/bin/bash
 pltfrm=$(< /root/.steamcmd_config/pltfrm)
 usrdata=$(< /root/.steamcmd_config/usrdata)
 installdir=$(< /root/.steamcmd_config/installdir)
-box86 /home/steam/Steam/steamcmd.sh $pltfrm $usrdata $installdir' >> steamcmd
+box86 /home/steam/Steam/steamcmd.sh $pltfrm $installdir $usrdata' >> steamcmd
 mv steamcmd /bin
 chmod +x /bin/steamcmd
 
