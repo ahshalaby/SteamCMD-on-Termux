@@ -6,7 +6,7 @@ echo -e "2- Store Steam username (and password) for auto login."
 echo -e "3- Login anonymously to Steam."
 echo -e "4- Choose desired platform (Windows/Linux/MacOS)."
 echo -e "5- Change the Steam directory (Where files are downloaded)."
-echo -e "6- Manually edit the SteamCMD bin file (with vi)."
+echo -e "6- Manually edit the SteamCMD bin file."
 echo -e "7- Exit.\n"
 
 read -p "Select an option:" option
