@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-echo -e "\nType in your preferred path for Steam folder:\n\n| Leave empty for default (sdcard/Steam) << Folder named Steam in your Android file explorer |\n\n"
+echo -e "\nType in your preferred path for Steam folder:\n\n| Leave empty for default (/sdcard/Steam) << Folder named Steam in your Android file explorer |\n\n"
 
 while true; do
 
@@ -15,15 +15,15 @@ then exit
 fi
 
 if [[ -z "$steam_path" ]];
-then echo -e "\n\nAre you sure you want to change your Steam path to ' \033[0;32mdefault (sdcard/Steam) \033[0;37m' ?"
+then echo -e "\n\nAre you sure you want to change your Steam path to ' \033[0;32mdefault (/sdcard/Steam) \033[0;37m' ?"
 read -n 1 -p "Choose ( y / n ): " option
 
 case $option in
 y) cd $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root/.steamcmd_config
 rm installdir 2> /dev/null
-echo "+force_install_dir sdcard/Steam" >> installdir
+echo "+force_install_dir /sdcard/Steam" >> installdir
 cd
-echo -e "\n\nChanged Steam path to default (sdcard/Steam)."
+echo -e "\n\nChanged Steam path to default (/sdcard/Steam)."
 echo -e "Exiting..\n"
 exit;;
 
